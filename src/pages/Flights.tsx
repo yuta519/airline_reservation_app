@@ -1,7 +1,5 @@
-import { Header } from "../components/Header";
-
 const Flights = () => {
-  return <Header />;
+  return <>hoge</>;
 };
 
 export default Flights;
