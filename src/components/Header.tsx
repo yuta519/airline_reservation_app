@@ -3,8 +3,6 @@ import React from "react";
 export const Header = () => {
   const { pathname } = window.location;
 
-  console.log(pathname);
-
   const selectedTabStyle =
     "block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white";
 
@@ -26,21 +24,15 @@ export const Header = () => {
               <path d="M3.691 10h6.309l-3-7h2l7 7h5c1.322-.007 3 1.002 3 2s-1.69 1.993-3 2h-5l-7 7h-2l3-7h-6.309l-2.292 2h-1.399l1.491-4-1.491-4h1.399l2.292 2" />
             </svg>
             <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-              Travel Reservation App
+              Travel App
             </span>
           </a>
           <div className="flex items-center lg:order-2">
             <a
-              href="#"
+              href="/login"
               className="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"
             >
               Log in
-            </a>
-            <a
-              href="#"
-              className="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
-            >
-              Get started
             </a>
             <button
               data-collapse-toggle="mobile-menu-2"
