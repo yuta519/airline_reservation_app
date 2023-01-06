@@ -17,7 +17,7 @@ root.render(
     <Header />
     <Router>
       <Routes>
-        <Route path="/" element={<App />} />
+        <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/flights" element={<Flights />} />
         <Route path="/hotels" element={<NotFound />} />
