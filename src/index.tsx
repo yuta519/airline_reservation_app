@@ -21,7 +21,7 @@ root.render(
         <Route path="/home" element={<Home />} />
         <Route path="/flights" element={<Flights />} />
         <Route path="/hotels" element={<NotFound />} />
-        <Route path="/car_rentals" element={<Flights />} />
+        <Route path="/car_rentals" element={<NotFound />} />
       </Routes>
     </Router>
   </>
