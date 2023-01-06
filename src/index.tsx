@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
 import { Header } from "./components/Header";
 import Flights from "./pages/Flights";
 import Home from "./pages/Home";
