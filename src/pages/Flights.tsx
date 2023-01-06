@@ -7,12 +7,14 @@ import { FlightOffer } from "../types/amadeus";
 interface State {
   countOfResults: number;
   flightOffers: FlightOffer[];
+  isSearch: boolean;
 }
 
 const Flights = () => {
   const [state, update] = useState<State>({
     countOfResults: 0,
     flightOffers: [],
+    isSearch: false,
   });
 
   const handleSubmitFlightSearch = async (params: {
@@ -32,6 +34,7 @@ const Flights = () => {
     update({
       countOfResults: result.countOfResults,
       flightOffers: result.flightOffers,
+      isSearch: true,
     });
   };
 
@@ -43,6 +46,11 @@ const Flights = () => {
         alt="Woman workcationing on the beach"
       />
       <FlightSearchForm onSubmit={handleSubmitFlightSearch} />
+      {state.isSearch ? (
+        <div className="mt-5 flex justify-center text-lg font-bold">
+          Got {state.countOfResults} results
+        </div>
+      ) : null}
       {state.countOfResults
         ? state.flightOffers.map((flightOffer) => (
             <FlightSearchResult flightOffer={flightOffer} />

@@ -6,6 +6,7 @@ import App from "./App";
 import { Header } from "./components/Header";
 import Flights from "./pages/Flights";
 import Home from "./pages/Home";
+import NotFound from "./pages/404";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -19,7 +20,7 @@ root.render(
         <Route path="/" element={<App />} />
         <Route path="/home" element={<Home />} />
         <Route path="/flights" element={<Flights />} />
-        <Route path="/hotels" element={<Flights />} />
+        <Route path="/hotels" element={<NotFound />} />
         <Route path="/car_rentals" element={<Flights />} />
       </Routes>
     </Router>
