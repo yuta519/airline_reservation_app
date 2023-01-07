@@ -16,10 +16,13 @@ export const AirportIataCodes: { [key: string]: string } = {
   // JAPAN
   NRT: "Narita Airport, Japan",
   HND: "Haneda Airport, Japan",
+  // INDIA
+  DEL: "Indira Gandhi Airport",
 };
 
 export const CurrencyIataCodes: { [key: string]: string } = {
   CAD: "Canadian Dollar",
   USD: "US Dollar",
   JPY: "Japan Yen",
+  INR: "Indian Rupee",
 };

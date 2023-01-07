@@ -178,11 +178,21 @@ const Home = () => {
         </div>
       </section> */}
 
-      <section className="bg-white dark:bg-gray-900">
+      <section className="h-screen bg-[url('https://content.skyscnr.com/m/cce15d2addefd0d/original/Japan_Homepage_Hero.png?resize=2000px:1400px&quality=60')]">
         <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
-          <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+          <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl text-white">
             We travel in the world
           </h1>
+        </div>
+        <div className="flex justify-center m-5">
+          <a href="/flights">
+            <button
+              className="py-3 lg:py-3 px-14 lg:px-14 text-white-500 font-bold rounded-3xl bg-blue-400 hover:shadow-teal-md transition-all outline-none text-white"
+              type="submit"
+            >
+              Search Flights
+            </button>
+          </a>
         </div>
       </section>
     </>

@@ -42,7 +42,7 @@ const Flights = () => {
     <>
       <img
         className="rounded-lg shadow-xl"
-        src="https://content.skyscnr.com/m/cce15d2addefd0d/original/Japan_Homepage_Hero.png?resize=2000px:1400px&quality=60"
+        src="https://www.aa.com/content/images/homepage/mobile-hero/en_US/Airplane-2.png"
         alt="Woman workcationing on the beach"
       />
       <FlightSearchForm onSubmit={handleSubmitFlightSearch} />

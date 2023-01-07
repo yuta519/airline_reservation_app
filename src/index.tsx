@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
 import Flights from "./pages/Flights";
 import Home from "./pages/Home";
 import NotFound from "./pages/404";
@@ -23,5 +24,6 @@ root.render(
         <Route path="/car_rentals" element={<NotFound />} />
       </Routes>
     </Router>
+    <Footer />
   </>
 );
