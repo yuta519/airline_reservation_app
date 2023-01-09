@@ -28,6 +28,7 @@ export const fetchFlightPrice = async () => {
       },
     }
   );
+  return response.data;
 };
 
 export const FetchFlightOffers = async (
